@@ -1,0 +1,209 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans,hyperref]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+%\usepackage[dvipdfm]{hyperref}
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+\usepackage[dvipdfm,unicode,pdfstartview=FitH]{hyperref}  %为了dvi有超链接
+\usepackage{xcolor}%调节颜色
+% 调整页边距
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{陆}{晓蕾}
+\title{\huge{应聘岗位：网络金融助理 }}                  % 可选项、如不需要可删除本行
+\address{南京市栖霞区文苑路1号}{南京师范大学仙林校区}            % 可选项、如不需要可删除本行
+\phone[mobile]{18351990069}              % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{438719297@qq.com}          % 可选项、如不需要可删除本行
+\homepage{github.com/LuXiaoEei}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{lxl.eps}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\hypersetup{dvipdfm}
+%\hypersetup{backref,pdfpagemode=FullScreen,colorlinks=true}
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                     % 详情参阅CJK文件包
+\maketitle
+
+\section{个人信息}
+
+\cvdoubleitem{学历}{硕士}           {政治面貌}{共产党员}
+\cvdoubleitem{籍贯}{江苏太仓}     {联系电话}{18351990069}
+\cvdoubleitem{邮箱}{438719297@qq.com}{GitHub\textcolor{white}{aa}}{\href{https://github.com/LuXiaoEei}{github.com/LuXiaoEei}}
+
+\section{教育背景}
+\cventry{2016 --  2019}{硕士在读}{\textbf{统计学}}{南京师范大学}{\textit{综测:344.5;学院排名:3/76;专业排名1/9}}{}  % 第3到第6编码可留白
+\cventry{2012 -- 2016}{理学学士}{\textbf{统计学}}{南京邮电大学}{\textit{GPA:3.85/5.00;专业排名:1/77}}{}
+\cventry{2013 -- 2016}{工学学士}{\textbf{通信工程}}{南京邮电大学}{\textit{本科二学历}}{}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+%\section{科研经历}
+%\cvlistitem{\textbf{半参数模型:}将参数模型和非参数模型的优点结合,是现代统计模型的一大分支,可以更加精准的刻画数据之间的关系,在读研期间,系统研究了一系列半参数模型的估计,置信域构造,模型检验,拟合优度检验的方法,及其大样本,有%限样本的性质,并进一步研究了基于半参的模型选择和变量选择的方法;}
+%\cvlistitem{\textbf{图像处理:}将半参模型运用到图像处理之中,包括图像的保边缘去噪,复原,进一步将图像数据特别是脑图像数据和回归等统计方法结合,可以做到病情的诊断,预测,现阶段主要研%究\href{https://github.com/LuXiaoEei/yangtiao}{将\textbf{分块B样条用于图像保边缘去噪}}，已大致完成二维情形 ;}
+%\cvlistitem{\textbf{算法实现:}将上述的一系列模型通过R或Python或Matlab实现,详细情况可查看,\href{https://github.com/LuXiaoEei}{https://github.com/LuXiaoEei},对数据结构和相关算法有一定的认识.}
+\section{实习经历}
+%\subsection{专业}
+\cventry{}{焦点科技股份有限公司}{MIC事业部 }{MIC产研部}{数据分析组 数据挖掘岗}{2018年05月 – 至今{}%
+%\textbf{工作职责:}%
+\begin{itemize}%
+\item \textbf{数据提取:}根据业务部门的需求主要使用Oracle,Hive,Kettle,Python从数据库中提取数据,或者从相关网站爬取数据,对于复杂的需求开发存储过程来提高效率.
+\item \textbf{报表开发:}为了将常态的需求固话,或者将日常的任务进度可视化,通过Qlikview生成数据报表进行展示.
+\item \textbf{报表清理:}报表的停用,往往涉及到存储过程的停用,相关表格的删除,基于R语言开发了一套脚本,自动从存储过程中提取出相应的来源表和生成表和对应的调度日志名称,并且根据提取出的调度日志来输出相应存储过程最近的调度日期.
+\end{itemize}}
+
+
+\section{项目经历}
+\cventry{}{项目名称:对公业务财务报表智能分析}{}{}{}{2018.03 – 2018.04{}%
+%\textbf{工作职责:	主要负责算法的设计和R语言实现}
+\begin{itemize}%
+\item 项目的需求是根据某企业各对公客户的财务月报,季报,年报,和这些客户每个月持有的产品情况,预测未来这些对公客户的产品持有变化情况;
+\item 整理数据,将各维度的数据整合成方便分析的格式;
+\item 分析产品分布和变化情况,对产品进行分类,处理缺失特征,进行特征选择;
+\item 针对不同的类型产品使用不同的模型进行预测.
+\end{itemize}}
+\textcolor{white}{\small \small white line}\newline{}
+\cventry{}{项目名称:基于B样条的图像分块保边缘去噪}{}{}{}{2017.11 – 2018.02{}%
+%\textbf{工作职责:	主要负责算法的设计和R语言实现}
+\begin{itemize}%
+\item 项目旨在设计出一个兼顾保结构和运算速度的去噪算法;
+\item 通过B样条检测可能的跳点;
+\item 独立使用K-Means聚类去除虚假的跳点;
+\item 独立的对跳点的位置进行线性插值,将跳点连成跳曲线;
+\item 独立根据跳曲线将图像分为多个模块,使得每个模块的像素值都是连续的;
+\item 独立的对每个模块分别使用双B样条拟合曲面,达到去噪效果.
+\item 项目详情 \href{https://github.com/LuXiaoEei/yangtiao}{https://github.com/LuXiaoEei/yangtiao}
+\end{itemize}}
+\textcolor{white}{\small \small white line}\newline{}
+\cventry{}{项目名称:实现外文文献中的相应算法}{}{}{}{2017.04 – 2018.03{}%
+%\textbf{工作职责:}%
+\begin{itemize}%
+\item 项目旨在通过实现文献中的算法来深入了解各个模型;
+\item 独立使用R实现基于单边局部线性核估计的图像去噪算法;
+\item 独立使用R和Matlab实现高维数据(神经影像数据)的多尺度加权主成分分析算法;
+\item 独立使用Matlab实现带跳的神经影像数据的空间变系数模型;
+\item 独立使用Python实现基于局部线性核估计的变系数模型估计的算法.
+\item 项目详情 \href{https://github.com/LuXiaoEei}{https://github.com/LuXiaoEei}
+%\item 工作内容 3
+\end{itemize}}
+%\textcolor{white}{\small \small white line}\newline{}
+%\cventry{}{项目名称:视频中前景目标提取}{}{}{}{2017.09 – 2017.09{}%
+%\textbf{工作职责:}%
+%\begin{itemize}%
+%\item 本项目使用R和Matlab提取复杂情况下视频中的前景目标;
+%\item 对于静态背景,直接使用背景差分进行前景目标提取;
+%\item 对于动态背景,使用高斯混合模型进行动态建模;
+%\item 对于光线剧烈变化的视频,埋点进行光线变化判断,从而重新初始化高斯混合模型.
+%\item 对于抖动的视频,通过角点检测,运动补偿进行图像配准之后建立高斯混合模型;
+%\item 工作内容 3
+%\end{itemize}}
+
+\section{主要获奖情况}
+\cvitem{2017.11}{“华为杯”第十四届中国研究生数学建模竞赛三等奖}
+\cvitem{2017.10}{南京师范大学学业综合一等奖学金}
+\cvitem{2016.11}{“华为杯”第十三届全国研究生数学建模竞赛三等奖}
+\cvitem{2016.10}{南京师范大学学业综合一等奖学金}
+\cvitem{2016.06}{南京邮电大学“优秀毕业生”,“优秀毕业论文”称号}
+\cvitem{2015.12}{3S杯全国大学生物联网技术与应用“三创”大赛全国二等奖}
+\cvitem{2014.11}{全国大学生数学建模竞赛江苏省二等奖}
+%\cvitem{2015.10}{南京邮电大学“三好学生标兵”称号}
+%\cvitem{2015.06}{南京邮电大学统计建模一等奖}
+\cvitem{2012.09}{多次获得校级奖励}
+
+\section{实践经历}
+\cvlistitem{2017.06 – 2018.06,南京师范大学数学科学学院研究生会副主席,负责研会日常事物的处理,统筹各部门组织的活动,主要分管研会财务和数据统计工作.}
+%\cvlistitem{2016.09 – 2017.06,南京师范大学数学科学学院学术科技中心干事,协助组织“我的学术之路——对话杰青”,“同样的学术,不同的道路”等大型学术交流活动.}
+\cvlistitem{2014.05 – 2015.06,完成省级重点（国家级）创新训练计划项目—江苏民营书店生存状况与发展研究（项目编号:201410293035Z）,获得优秀结题.}
+%\cvlistitem{2014.11 – 2015.06,参与南京大学双语词典研究中心主持的国家社科基金重点项目“人文社会科学汉英动态术语数据库的构建”项目.}
+%\cvlistitem{2012 – 2014,南京邮电大学舞龙队成员}
+\cvlistitem{2012 – 2015,在南京邮电大学统计社先后担任干事,部长,副社长,主要负责统计社社刊的编写.}
+
+\section{个人技能}
+\cvlistitem{\textbf{熟悉：}R,Python,Oracle,MySQL,Matlab,Qlikview,Kettle,统计学基本方法,数据结构与算法,机器学习}
+\cvlistitem{\textbf{了解：}Hive,MapReduce,Latex,Markdown}
+
+%\section{技能证书}
+
+%\cvlistitem{\cvdoubleitem{计算机三级}{全国数据库技术合格}           {英语六级}{446分}}
+%\cvdoubleitem{计算机二级}{全国ACCESS优秀}     {英语四级}{513分}
+%\cvdoubleitem{普通话测试}{二级乙等}   {}{}
+%\cvlistdoubleitem{计算机三级 全国数据库技术合格}{英语六级 446分}
+%\cvlistdoubleitem{计算机二级 全国ACCESS优秀}{英语四级 513分}
+%\cvlistdoubleitem{项目 3}{}
+
+%\cvitem{英语六级}{446分}
+%\cvitem{英语四级}{513分}
+%\cvitem{普通话测试}{二级乙等}
+%\cvitem{计算机三级}{数据库技术}
+%\cvitem{计算机二级}{ACCESS优秀}
+
+
+%\section{自述}
+%\cvlistitem{较为熟练的运用R,Matlab,Python,MySQL,SPSS,Excel等统计分析软件,了解Java，有一定的专业外文文献阅读能力,对数据结构和算法有一定的认识;}
+%不仅熟悉传统的统计方法,而且也较熟悉复杂的统计方法,比如蒙特卡洛模拟,样条方法,经验似然,半参模型等,且对机器学习,数据挖掘相关算%法有所了解;
+%对数据分析充满兴趣,有进取心,责任心,做事一丝不苟,性格开朗,喜欢挑战自己,适应能力强.}
+%\cvlistitem{不仅熟悉常见统计方法的原理和应用,而且也熟悉其他统计方法的原理和应用,比如蒙特卡洛模拟,样条方法,经验似然,半参模型等,且熟悉机器学习,数据挖掘相关算法,可以解决实际问题;}
+%\cvlistitem{对数据分析，挖掘感兴趣,对MarkDown,Latex,Git也有所了解,有进取心,责任心,做事一丝不苟,性格开朗,喜欢挑战自己,适应能力强.}
+%\cvlistitem{有进取心,责任心,做事一丝不苟,性格开朗,喜欢挑战自己,适应能力强.}
+
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+
+%\section{其他 2}
+%\cvlistdoubleitem{项目 1}{项目 4}
+%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+%\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.

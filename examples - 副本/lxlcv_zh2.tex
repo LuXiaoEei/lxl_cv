@@ -1,0 +1,148 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+%\usepackage[dvipdfm]{hyperref}
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+%\usepackage[dvipdfm,unicode,pdfstartview=FitH]{hyperref}  %为了dvi有超链接
+\usepackage{xcolor}%调节颜色
+% 调整页边距
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{Xiaolei}{Lu}
+%\title{\huge{应聘岗位：}}                  % 可选项、如不需要可删除本行
+\address{Nanjing Qixia District Wenyuan Road No.1}{Nanjing Normal University}            % 可选项、如不需要可删除本行
+\phone[mobile]{18351990069}              % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{438719297@qq.com}          % 可选项、如不需要可删除本行
+\homepage{github.com/LuXiaoEei}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{lxl.eps}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\hypersetup{dvipdfm}
+%\hypersetup{backref,pdfpagemode=FullScreen,colorlinks=true}
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                     % 详情参阅CJK文件包
+\maketitle
+
+\section{Personal information}
+
+\cvdoubleitem{Degree}{Master}         {Phone}{18351990069}
+\cvdoubleitem{Email} {438719297@qq.com} {GitHub}{\href{https://github.com/LuXiaoEei}{github.com/LuXiaoEei}}
+
+\section{Education}
+\cventry{2016 --  2019}{Master}{\textbf{Statistics}}{Nanjing Normal University}{\textit{Score:344.5;Rank:3/76}} {}  % 第3到第6编码可留白
+\cventry{2012 -- 2016}{Bachelor}{\textbf{Statistics}}{Nanjing University of Posts and Telecommunications}{\textit{GPA:3.85/5.00;Rank:1/77}}{}
+\cventry{2013 -- 2016}{Bachelor}{\textbf{Communication Engineering}}{Nanjing University of Posts and Telecommunications}{\textit{}}{}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{Project experience}
+\cventry{}{The Intelligent Analysis of Business to Business - Financial Statements}{}{}{}{2018.03 – 2018.04{}%
+%\textbf{工作职责:	主要负责算法的设计和R语言实现}
+\begin{itemize}%
+\item The purpose of this project is to predict the future holding probability of the products based on historical financial statements;
+\item Sort out data and integrate all dimensions data into convenient analysis format;
+\item Classify according to the distribution and change of products, then deal with missing data and feature selection;
+\item Use different models to predict different types of products.
+\end{itemize}}
+\textcolor{white}{\small \small white line}\newline{}
+%\subsection{专业}
+\cventry{}{Preserving Edge Image Denosing Based On B-Spline}{}{}{}{2017.11 – 2018.02{}%
+%\textbf{工作职责:	主要负责算法的设计和R语言实现}
+\begin{itemize}%
+\item The project aims to design a denoising algorithm that takes into account both the structure and speed of operations.
+\item Detect possible jumps based on B-splines;
+\item Use K-Means to remove spurious jumps;
+\item Connect jump points as jump curves by using linear interpolation;
+\item Based on the jump curve, the image is divided into multiple modules;
+\item Use double B-spline fitting surfaces for each module to achieve denoising image.
+\end{itemize}}
+%\subsection{专业}
+%\textcolor{white}{\small \small white line}\newline{}
+%\cventry{}{Implement The Corresponding Algorithm In Foreign Literature}{}{}{}{2017.04 – 2018.03{}%
+%\textbf{工作职责:}%
+%\begin{itemize}%
+%\item It aims to deeply understand each model by implementing algorithms in the literature;
+%\item Use R to implement image denoising algorithm based on unilateral local linear kernel estimation;
+%\item Use R and Matlab to implement a multi-scale weighted principal component analysis algorithm for high-dimensional data (neural image data);
+%\item Using Matlab to implement a spatially variable coefficient model with jumped neuroimaging data;
+%\item Using Python to implement a variable coefficient model estimation algorithm based on local linear kernel estimation.
+%\item 工作内容 3
+%\end{itemize}}
+\textcolor{white}{\small \small white line}\newline{}
+\cventry{}{Foreground Goals Extraction In Video}{}{}{}{2017.09 – 2017.09{}%
+%\textbf{工作职责:}%
+\begin{itemize}%
+\item This project uses R and Matlab to achieve the foreground goals in the video under complex conditions;
+\item For static backgrounds, use background difference directly for foreground object extraction;
+\item For dynamic background, use Gaussian mixture model for dynamic modeling;
+\item For dithered video, a Gaussian mixture model is established after image registration through corner detection and motion compensation;
+\item For a video with drastic changes in light, when the light has been judged by the buried point, then the Gaussian mixture model is reinitialized.
+%\item 工作内容 3
+\end{itemize}}
+\section{Major awards}
+\cvitem{2017.11}{The 14th China Graduate Mathematics Modeling Contest Third Prize}
+\cvitem{2016.11}{The 13th China Graduate Mathematics Modeling Contest Third Prize}
+\cvitem{2015.12}{3S Cup National University Biological Networking Technology and Application "Three Creations" Contest second prize}
+\cvitem{2014.11}{The National University Student Mathematical Modeling Contest Jiangsu Second Prize}
+\cvitem{2012.09}{Many school-level awards}
+\section{Practice experience}
+\cvlistitem{2017.06 – 2018.06,I am the vice chairman of the Graduate's Union Meeting of Mathematical Science at Nanjing Normal University,responsible for the handling of the daily affairs of the Institute, coordinating the activities organized by various departments, and mainly responsible for the financial and statistical work of the seminar.}
+\cvlistitem{2014.05 – 2015.06,Complete provincial key (national level) innovation training program—Jiangsu Private Bookstore Survival Status and Development Study (project number: 201410293035Z), and obtained excellent conclusion.}
+\section{Personal skills}
+\cvlistitem{\textbf{Familiar：}R,Python,MySQL,Matlab,Basic Statistics Methods, Data Structures and Algorithms, Machine Learning}
+\cvlistitem{\textbf{Know：}Java,Hive,MapReduce,Latex,Markdown}
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+%\section{其他 2}
+%\cvlistdoubleitem{项目 1}{项目 4}
+%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+%\cvlistdoubleitem{项目 3}{}
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+\clearpage\end{CJK}
+\end{document}
+%% 文件结尾 `template-zh.tex'.
